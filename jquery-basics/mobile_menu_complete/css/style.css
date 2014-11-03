@@ -66,15 +66,7 @@ Also hides select and button on larger width and show's links
   #menu ul {
     display:none;
   }
-  
-  #menu select {
-    width: 70%
-  }
-  #menu button {
-    margin-top: 11px;
-    width: 20%;
-    height: 18px;
-  }
+
 }
 
 @media (min-width: 568px) {
