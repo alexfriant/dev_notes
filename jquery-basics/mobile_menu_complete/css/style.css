@@ -62,9 +62,18 @@ Modify CSS to hide links on small width and show button and select
 Also hides select and button on larger width and show's links
 **/
 
-@media (min-width: 320px) and (max-width: 568px) {
+@media (min-width: 320px) and (max-width: 567px) {
   #menu ul {
     display:none;
+  }
+  
+  #menu select {
+    width: 70%
+  }
+  #menu button {
+    margin-top: 11px;
+    width: 20%;
+    height: 18px;
   }
 }
 
