@@ -1,5 +1,6 @@
 body {
 	background: #384047;
+    min-height: 752px; //to preserve window height if scrolled down to view the color adjustment panel
 	font-family: sans-serif;
 }
 canvas {
