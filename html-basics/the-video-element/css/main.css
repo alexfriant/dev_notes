@@ -22,7 +22,7 @@ h1, h2 {
   text-align: center;
 }
 
-video, audio, .mejs-treehouse {
+video, audio, .mejs-treehouse, .mejs-custom, .mejs-ted {
   margin: 0 auto;
   display: block;
 }
