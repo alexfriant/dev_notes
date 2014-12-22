@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <title>AJAX with JavaScript</title>
+  <script>
+    console.log("defining xhr is next...");
+    var xhr = new XMLHttpRequest();  //create object
+    
+    console.log("new XHR, ready state: " + xhr.readyState); //to monitor the ready state
+    
+    xhr.onreadystatechange = function () {  //create callback function
+      console.log("on ready state change: " + xhr.readyState); //to monitor the ready state
+      if (xhr.readyState === 4) { //when the ready state is 4
+        if (xhr.status === 200) {
+        document.getElementById('ajax').innerHTML = xhr.responseText;
+        } else {
+          //alert(xhr.statusText);
+          document.getElementById('ajax').innerHTML = xhr.status + " (" + xhr.statusText + ")";
+        }
+      }
+      
+    };
+    
+    console.log("xhr.open command is next...");
+    xhr.open('GET', 'sidebar.html');  //open a request
+    console.log("^^^ that is the result of 'xhr.open'");
+    
+    function sendAJAX() { //gets called by clicking on the "bring it!" button
+      xhr.send();  //send the request
+      document.getElementById('load').style.display = "none"; //turn off button
+    };
+    
+  </script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Bring on the AJAX</h1>
+            <h2 id="thestate"></h2>
+            <button id="load" onclick="sendAJAX()"> Bring it!</button>
+          </div>
+          <div id="ajax">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
