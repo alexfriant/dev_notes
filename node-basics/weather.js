@@ -1,9 +1,13 @@
+//run in node.js
 //You'll need a forecast.io apikey, so register for a free account
-//Bend, Oregon coords: 44.0744, -121.2574
+
 var https = require("https");
 var http = require("http");
 
-var weatherURL = "https://api.forecast.io/forecast/APIKEY/44.0744,-121.2574" //make sure to swap in your APIKEY
+var apikey = "123456789ABCDEFG" //make sure to swap in your APIKEY
+var latlong = "44.0744,-121.2574" //Bend, Oregon coords
+
+var weatherURL = "https://api.forecast.io/forecast/" + apikey + "/" + latlong 
 
 //Round the temperature to a specified decimal place
 function roundedToPrecision(number, precision){
