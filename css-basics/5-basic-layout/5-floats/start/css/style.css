@@ -136,10 +136,19 @@ a:active {
   width: 50px;
 }
 
+/* Floated Columns Styles ------------------ */
 
+.resorts, .tips {
+  width: 46.5%;
+}
 
+.tips {
+  float: right;
+}
 
-
+.resorts {
+  float: left;
+}
 
 
 
