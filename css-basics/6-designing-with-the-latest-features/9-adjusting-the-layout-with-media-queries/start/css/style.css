@@ -207,7 +207,7 @@ a:active {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .primary-content,
   .secondary-content {
     width: 100%;
