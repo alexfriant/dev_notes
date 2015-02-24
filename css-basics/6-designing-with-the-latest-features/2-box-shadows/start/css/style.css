@@ -139,6 +139,8 @@ a:active {
   margin: 105px 0 60px;
   background: #434a52 url('../img/bear.jpg') no-repeat center;
   background-size: cover;
+  /* inset_option horizontal vertical blur spread color */
+  box-shadow: inset 0px 0px 50px 10px rgba(255,255,255,.8);
 }
 
 .arrow {

@@ -74,8 +74,8 @@ a:active {
   height: 850px;
   background: #ffa949 url('../img/mountains.jpg') no-repeat center;
   background-size: cover;
-  
-  background-image: radial-gradient(circle at top right, #ffa949, firebrick);
+/*  color stops position the color along the gradient*/
+  background-image: radial-gradient(circle at top right, #ffa949 0%, firebrick 60%, dodgerblue 80%);
 }
 
 .title {

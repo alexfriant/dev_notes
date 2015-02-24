@@ -26,7 +26,11 @@ h3 {
 }
 
 .secondary-content {
-  border-top: 2px solid lightgrey;
+  
+}
+
+.t-border {
+  border-top: 2px solid blue;
 }
 
 #main-footer {
@@ -34,18 +38,4 @@ h3 {
   padding-bottom: 60px;
   border-bottom: solid 10px orange;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

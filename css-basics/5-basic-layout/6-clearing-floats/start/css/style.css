@@ -83,14 +83,16 @@ a:active {
 }
 
 .primary-content {
-	padding-top: 25px;
+  padding-top: 25px;
   padding-bottom: 95px;
 }
 
 .secondary-content {
-	padding-top: 80px;
-	padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
+/* this below can cause issues  */
+/*  overflow: auto;*/
 }
 
 .callout {
@@ -151,12 +153,11 @@ a:active {
   float: left;
 }
 
-
-
-
-
 /* Float Clearfix ------------------ */
-
+/* This creates a blank table after the 
+   two columns, which is after all the
+   regular content, and forces the parent
+   div to accomodate all the elements */
 .group:after {
   content: "";
   display: table;

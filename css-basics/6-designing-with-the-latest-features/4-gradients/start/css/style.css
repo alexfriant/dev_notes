@@ -74,6 +74,8 @@ a:active {
   height: 850px;
   background: #ffa949 url('../img/mountains.jpg') no-repeat center;
   background-size: cover;
+/*  background-image: linear-gradient(to right, #ffa949, firebrick);*/
+  background-image: radial-gradient(circle at top right, #ffa949, firebrick);
 }
 
 .title {
