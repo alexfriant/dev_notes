@@ -4,10 +4,16 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
   <title>JavaScript Basics</title>
+  <!-- Scripts in the header get executed before the body gets loaded -->
+  <script>
+    alert("This message is embedded in the HTML");
+  </script>
  </head>
 <body>
   <div class="container">
   <h1>Where to place your JavaScript code.</h1>
   </div>
+  <!-- Placing script links here forces the page to load before the script gets executed -->
+  <script src="script.js"></script>
 </body>
 </html>
