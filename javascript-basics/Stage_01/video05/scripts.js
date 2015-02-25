@@ -1,2 +1,3 @@
-alert(hello there");
-document.rite("No it works!");
+alert("hello there");
+document.write("Now it works!");
+console.log("Program complete");
