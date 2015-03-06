@@ -105,3 +105,12 @@ p {
   -moz-box-shadow: 0 2px 0 0 #2c6085;
   box-shadow: 0 2px 0 0 #2c6085;
 }
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
