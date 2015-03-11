@@ -8,7 +8,12 @@ function getRandomNumber( lower, upper ) {
   }
 }
 
-try {console.log( getRandomNumber( 'nine', 24 ) );} catch(myError) {console.log(myError.message)}
+try {
+  console.log( getRandomNumber( 'nine', 24 ) );
+} catch(myError) {
+  console.log(myError.message)
+}
+
 console.log( getRandomNumber( 1, 100 ) );
 console.log( getRandomNumber( 200, 'five hundred' ) );
 console.log( getRandomNumber( 1000, 20000 ) );
