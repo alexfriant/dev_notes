@@ -1,0 +1,1 @@
+alert("This message is in the script.js file.");
