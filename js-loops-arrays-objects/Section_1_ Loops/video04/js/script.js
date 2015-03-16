@@ -8,19 +8,13 @@ function getRandomNumber( upper ) {
   return num;
 }
 
-while ( guessCount < 10 ) {
+do {
   guess = prompt('I am thinking of a number between 1 and 10. What is it?');
   guessCount += 1;
   if (parseInt(guess) === randomNumber) {
     correctGuess = true;
-    break;
   }  
-}
+} while ( ! correctGuess );
   
-if ( correctGuess ) {
-  document.write('<h1>You guessed the number!</h1>');
-  document.write('It took you ' + guessCount + ' tries to guess the number ' + randomNumber);
-} else {
-  document.write('<h1>You didn\'t guess the number, which was ' + randomNumber + '</h1>');
-  document.write('You made ' + guessCount + ' guesses.' );
-}
+document.write('<h1>You guessed the number!</h1>');
+document.write('It took you ' + guessCount + ' tries to guess the number ' + randomNumber);
