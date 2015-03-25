@@ -113,5 +113,13 @@ li {
 }
 
 span {
+  font-weight: bold;
+}
+
+.right {
+  color: green;
+}
+
+.wrong {
   color: red;
 }
