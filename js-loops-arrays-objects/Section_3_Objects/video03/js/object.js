@@ -6,3 +6,10 @@ var person = {
   skills : ['JavaScript', 'HTML', 'CSS']
 };
 
+for ( eachKey in person ) {
+  if (eachKey == 'skills') {
+    console.log(eachKey + ': ' + person[eachKey].join(', '));
+  } else {
+  console.log(eachKey + ': ' + person[eachKey]);
+  }
+}

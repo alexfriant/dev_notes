@@ -11,3 +11,12 @@ function print(message) {
   div.innerHTML = message;
 }
 
+var message = '<p>Hello. My name is ' + person.name + '</p>';
+message += '<p>I live in the ' + person.country + '</p>';
+person.name = 'Rainbow Dash';
+message += '<p>But, I wish my name was ' + person.name + '!</p>';
+person.age +=1;
+message += '<p>I will be ' + person.age + ' next year.</p>';
+message += '<p>I have ' + person.skills.length + ' skills: ';
+message += person.skills.join(', ') + '</p>';
+print(message);
