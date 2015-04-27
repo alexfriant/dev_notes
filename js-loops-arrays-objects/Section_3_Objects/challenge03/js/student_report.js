@@ -6,10 +6,14 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 
-for (var i = 0; i < students.length; i += 1) {
-  student = students[i];
-  message += '<h2>Student: ' + student.name + '</h2>';
-  message += '<p>Track: ' + student.track + '</p>';
-  message += '<p>Points: ' + student.points + '</p>';
-  message += '<p>Achievements: ' + student.achievements + '</p>';
+function outputResults(studentsIndexList) {
+  for (var i = 0; i < studentsIndexList.length; i++) {
+    student = students[studentsIndexList[i]];
+    message += '<h2>Student: ' + student.name + '</h2>';
+    message += '<p>Track: ' + student.track + '</p>';
+    message += '<p>Points: ' + student.points + '</p>';
+    message += '<p>Achievements: ' + student.achievements + '</p>';
+  }
+  print(message);
+  message = '';
 }

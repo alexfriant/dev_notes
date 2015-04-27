@@ -1,32 +1,32 @@
-var students = [ 
-  { 
-   name: 'Dave',
-    track: 'Front End Development',
-    achievements: 158,
-    points: 14730
+var students = [
+  {
+    name: "Alex",
+    track: "JavaScript",
+    achievements: 18,
+    points: 6156
   },
   {
-    name: 'Jody',
-    track: 'iOS Development with Swift',
-    achievements: '175',
-    points: '16375'
+    name: "Dave",
+    track: "Python",
+    achievements: 36,
+    points: 14321
   },
   {
-    name: 'Jordan',
-    track: 'PHP Development',
-    achievements: '55',
-    points: '2025'
+    name: "Sally",
+    track: "C++",
+    achievements: 28,
+    points: 8903
   },
   {
-    name: 'John',
-    track: 'Learn WordPress',
-    achievements: '40',
-    points: '1950'
+    name: "Bubba",
+    track: "Ruby",
+    achievements: 34,
+    points: 10353
   },
   {
-    name: 'Trish',
-    track: 'Rails Development',
-    achievements: '5',
-    points: '350'
+    name: "Marge",
+    track: "Node.js",
+    achievements: 14,
+    points: 2087
   }
 ];
